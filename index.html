@@ -1,31 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Web của mình</title>
+    <title>Web của Sương</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+        }
+        
+        /* Menu góc trái - Nền xanh dương */
+        .sidebar {
+            width: 280px;
+            background: linear-gradient(135deg, #2196F3, #0D47A1); /* Xanh dương gradient */
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 30px 20px;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar h2 {
+            color: white;
             text-align: center;
-            background-color: #f2f2f2;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid white;
         }
+        
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border-radius: 10px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .sidebar a:hover {
+            background-color: rgba(255,255,255,0.2);
+            transform: translateX(5px);
+        }
+        
+        /* Nội dung chính */
+        .main-content {
+            margin-left: 280px;
+            padding: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        
         h1 {
-            color: #ff6699;
+            color: #2196F3; /* Màu xanh dương cho tiêu đề */
+            margin-bottom: 20px;
         }
+        
         p {
             font-size: 18px;
+            margin-bottom: 20px;
         }
+        
         img {
-            width: 200px;
+            width: 250px;
             border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-
-    <h1>Xin chào, mình là Sương </h1>
-    <p>Đây là website đầu tiên của mình</p>
-
-    <img src="https://picsum.photos/200" alt="ảnh">
-
+    <div class="sidebar">
+        <h2> MỤC LỤC</h2>
+        <a href="index.html"> Trang chủ</a>
+        <a href="about.html"> Giới thiệu</a>
+        <a href="services.html"> Hải dương_Khí tượng_Thủy văn</a>
+           <a href="services.html"> Hải dương học</a>
+           <a href="services.html"> Khí tượng học</a>
+           <a href="services.html"> Thủy văn học</a>
+        <a href="contact.html">Liên hệ</a>
+    </div>
+    
+    <div class="main-content">
+        <h1>Xin chào, mình là Sương</h1>
+        <p>Đây là website đầu tiên của mình</p>
+        <img src="images/avatar.jpg" alt="ảnh của Sương">
+    </div>
 </body>
 </html>
